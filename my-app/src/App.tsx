@@ -1,23 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import NavBar from './components/NavBar/NavBar.tsx';  // Make sure NavBar is imported
+import Dashboard from './components/Dashboard/Dashboard.tsx';  // Assuming Dashboard is also part of the app
+import History from './components/History/History.tsx';  // Assuming History is also part of the app
 
 function App() {
+  const [activeTab, setActiveTab] = useState("dashboard");
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
+        {activeTab === "dashboard" && <Dashboard />}
+        {activeTab === "history" && <History />}
       </header>
     </div>
   );
