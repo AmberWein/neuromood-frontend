@@ -1,0 +1,23 @@
+.main-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .active-tab {
+    background-color: #add8e6;
+  }
+  
+  .inactive-tab {
+    background-color: #f0f0f0;
+  }
