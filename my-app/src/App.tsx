@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import NavBar from './components/NavBar/NavBar.tsx';  // Make sure NavBar is imported
-import Dashboard from './components/Dashboard/Dashboard.tsx';  // Assuming Dashboard is also part of the app
-import History from './components/History/History.tsx';  // Assuming History is also part of the app
+import NavBar from './Components/NavBar/NavBar.tsx';
+import Dashboard from './Components/Dashboard/Dashboard.tsx';
+import History from './Components/History/History.tsx';
 
 function App() {
   const [activeTab, setActiveTab] = useState("dashboard");
