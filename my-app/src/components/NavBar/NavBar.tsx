@@ -1,4 +1,4 @@
-// Handles tab navigation.
+// This component provides navigation between the Dashboard and History pages using React Router.
 
 import React from "react";
 import './NavBar.css';
