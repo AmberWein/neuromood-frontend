@@ -1,16 +1,18 @@
-import React from "react";
-import './recommendationsHolder.css';
+// Displays recommendations and daily advice.
 
-const RecommendationsHolder: React.FC = () => {
+import React from "react";
+import "./RecommendationsHolder.css";
+
+const RecommendationsHolder = () => {
   return (
-    <div className="recommendations-container">
-      <div className="recommendation-item">
+    <div className="recommendations-holder">
+      <div className="recommendation">
         <h4>Recommendation</h4>
         <p>Go outside for a walk</p>
       </div>
-      <div className="recommendation-item">
+      <div className="advice">
         <h4>Daily Advice</h4>
-        <p>Hello! lorem ipsum</p>
+        <p>Hello! What a beautiful day</p>
       </div>
     </div>
   );

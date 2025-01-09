@@ -1,5 +1,7 @@
+// Displays weather and air quality information.
+
 import React from "react";
-import './fetchedDataContainer.css';
+import './FetchedDataContainer.css';
 
 const FetchedDataContainer: React.FC = () => {
   return (

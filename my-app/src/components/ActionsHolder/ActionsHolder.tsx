@@ -1,3 +1,5 @@
+// Manages inputs and buttons.
+
 import React, { useState } from "react";
 import './ActionsHolder.css';
 
